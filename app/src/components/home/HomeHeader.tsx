@@ -13,6 +13,10 @@ import r3 from '../../images/home/r-3.png'
 
 type Prop = {};
 
+
+// TODO:
+// 1. Deal with logged out users ( currently we say Learn more but it should be a sign in button as well ) Q: maybe always have learn more? 
+
 const HomeHeader = (_: Prop): React.ReactElement => {
   return (
     <header className='relative overflow-hidden'>
@@ -71,5 +75,4 @@ const HomeHeader = (_: Prop): React.ReactElement => {
 }
 
 
-export default HomeHeader;
-
+export default HomeHeader

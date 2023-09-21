@@ -1,17 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from './pages/Home'
-import './stylesheets/builds/application.css'
 import Products from './pages/Products';
+import Navbar from './components/Navbar';
+
+import './stylesheets/builds/application.css'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/products" element={<Products />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

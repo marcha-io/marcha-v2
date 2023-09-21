@@ -16,6 +16,7 @@ type Prop = {};
 
 // TODO:
 // 1. Deal with logged out users ( currently we say Learn more but it should be a sign in button as well ) Q: maybe always have learn more? 
+// 2. move string information into constants
 
 const HomeHeader = (_: Prop): React.ReactElement => {
   return (

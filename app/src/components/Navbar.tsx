@@ -2,6 +2,8 @@ import React from 'react';
 
 import marchaLogo from '../images/marcha_logo.png';
 
+import { PRODUCT_END_POINT, buildProductUrl } from '../utils/buildProductUrl';
+
 type Prop = {};
 
 
@@ -29,12 +31,12 @@ const Navbar = (_: Prop): React.ReactElement => {
                     <div className="flex h-full justify-center space-x-8">
                       <div className="flex">
                         <div className="relative flex">
-                          <a href="/products?type=clothing" className="border-transparent hover:text-black transition-text duration-200 ease-in-out relative z-10 -mb -px flex items-center border-b-2 pt-px text-sm font-normal transition-colors duration-200 ease-out">Fashion</a>
+                          <a href={buildProductUrl('clothing')} className="border-transparent hover:text-black transition-text duration-200 ease-in-out relative z-10 -mb -px flex items-center border-b-2 pt-px text-sm font-normal transition-colors duration-200 ease-out">Fashion</a>
                         </div>
                       </div>
                       <div className="flex">
                         <div className="relative flex">
-                          <a href="/products?type=electronics" className="border-transparent hover:text-black transition-text duration-200 ease-in-out relative z-10 -mb -px flex items-center border-b-2 pt-px text-sm font-normal transition-colors duration-200 ease-out">Electronics</a>
+                          <a href={buildProductUrl('electronics')} className="border-transparent hover:text-black transition-text duration-200 ease-in-out relative z-10 -mb -px flex items-center border-b-2 pt-px text-sm font-normal transition-colors duration-200 ease-out">Electronics</a>
                         </div>
                       </div>
                     </div>

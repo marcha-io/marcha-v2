@@ -1,11 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home'
+import Products from './pages/Products';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Welcome to Marcha </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

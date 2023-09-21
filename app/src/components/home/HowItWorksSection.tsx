@@ -75,5 +75,4 @@ const HowItWorksSection = (_: Prop): React.ReactElement => {
   );
 }
 
-
 export default HowItWorksSection;

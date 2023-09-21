@@ -1,12 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from './pages/Home'
+import Products from './pages/Products';
+import Navbar from './components/Navbar';
+
+import './stylesheets/builds/application.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1> Welcome to Marcha </h1>
-    </div>
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

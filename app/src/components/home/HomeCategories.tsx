@@ -22,21 +22,21 @@ const HomeCategories = (_: Prop): React.ReactElement => {
         <div className="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2 sm:relative sm:h-full">
             <img src={allProductsPhoto} className="object-cover object-center group-hover:opacity-75 transition:opacity duration-1500 sm:absolute sm:inset-0 sm:h-full sm:w-full" />
-            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <HomeCategory label='All products' url={PRODUCT_END_POINT} />
             </div>
           </div>
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img src={fashionProductsPhoto} className="object-cover object-center group-hover:opacity-75 transition:opacity duration-1500 sm:absolute sm:inset-0 sm:h-full sm:w-full" />
-            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <HomeCategory label='Fashion' url={buildProductUrl('clothing')} />
             </div>
           </div>
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img src={electronicProductsPhoto} className="object-cover object-center group-hover:opacity-75 transition:opacity duration-1500 sm:absolute sm:inset-0 sm:h-full sm:w-full" />
-            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <HomeCategory label='Electronics' url={buildProductUrl('electronics')} />
             </div>

@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './src/pages/*.tsx',
+    './public/index.html',
+    './src/pages/**/*.tsx',
     './src/**/*.tsx',
     './public/stylesheets/**/*.css',
   ],

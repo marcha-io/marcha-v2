@@ -24,4 +24,4 @@ yarn-error.log*
 package-lock*.json
 
 #tailwind build
-/public/stylesheets/builds
+/src/stylesheets/builds
